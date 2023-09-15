@@ -1,0 +1,7 @@
+description: What is 0x3D (base 16) in decimal (base 10)?
+
+attempts: 
+so we have 16x3 + 13(D in hexa equals 13 in decimal) == 61
+
+picoCTF{61}
+

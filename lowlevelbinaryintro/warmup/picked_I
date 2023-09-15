@@ -1,0 +1,11 @@
+description:
+Description
+This service can provide you with a random number, but can it do anything else?
+Connect to the program with netcat:
+$ nc saturn.picoctf.net 63427
+The program's source code can be downloaded here.
+
+attempts:
+so we have some python script, which gives us random number, which really isnt random, we can see in the file, that its not about it, we have to call other function, which is called "win()", there we get the ascii, which converted into text gives
+
+picoCTF{4_d14m0nd_1n_7h3_r0ugh_ce4b5d5b}

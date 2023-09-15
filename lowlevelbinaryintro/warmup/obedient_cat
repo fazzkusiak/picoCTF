@@ -1,0 +1,11 @@
+description:
+This file has a flag in plain sight (aka "in-the-clear"). Download flag.
+
+attemps and thoughts:
+download, and then check the file with simple notepad app, if there isnt flag given
+
+solution:
+download the file, open it by text editor
+
+
+picoCTF{s4n1ty_v3r1f13d_b5aeb3dd}
