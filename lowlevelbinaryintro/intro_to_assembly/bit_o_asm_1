@@ -1,0 +1,10 @@
+Description
+Can you figure out what is in the eax register? Put your answer in the picoCTF flag format: picoCTF{n} where n is the contents of the eax register in the decimal number base. If the answer was 0x11 your flag would be picoCTF{17}.
+Download the assembly dump here.
+
+attempts:
+<+15>:    mov    eax,0x30
+line from this file, seems like 0x30 is in eax register
+so, 3 x 16 + 0 == 48
+
+picoCTF{48} is the answer
