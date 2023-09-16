@@ -1,0 +1,10 @@
+Description
+Can you figure out how this program works to get the flag?
+Connect to the program with netcat:
+$ nc saturn.picoctf.net 60144
+The program's source code can be downloaded here.
+
+attempts:
+
+
+
