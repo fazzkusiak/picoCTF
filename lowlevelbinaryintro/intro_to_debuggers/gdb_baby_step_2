@@ -22,3 +22,9 @@ thats what I get from disassmeble main file
 
 so, we need eax register value 
 
+wanted to use debugger to get the value of EAX register, however I am unable to do it thru webshell of picoctf, so gonna do it by my own machine with gdb
+
+after making break at the break *main+59, had stopped the program after making whole loop, and from the debugger by info registers eax I got the current value which was
+
+picoCTF{307019}
+

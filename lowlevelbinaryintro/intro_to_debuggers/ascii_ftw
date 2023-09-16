@@ -1,0 +1,14 @@
+Description
+This program has constructed the flag using hex ascii values. Identify the flag text by disassembling the program.
+You can download the file from here
+
+attempts:
+
+ive just deleted whole content, in summary
+
+
+x/c $rbp - 0x30
+
+to get first letter, then just space to get next chars
+
+picoCTF{ASCII_IS_EASY_8960F0AF}

@@ -1,0 +1,15 @@
+Description
+Now for something a little different. 0x2262c96b is loaded into memory in the main function. Examine byte-wise the memory that the constant is loaded in by using the GDB command x/4xb addr. The flag is the four bytes as they are stored in memory. If you find the bytes 0x11 0x22 0x33 0x44 in the memory location, your flag would be: picoCTF{0x11223344}.
+Debug this.
+
+attempts:
+had to use debuggera gain, break it at the end, then find the memory with 0x2262c96b value, appears it is $rbp-0x4, so 've made this
+typed  x/4xb $rbp-0x4
+
+and get
+
+0x7fffffffde1c: 0x6b    0xc9    0x62    0x22
+
+so the flag is, as stated in instructions
+picoCTF{0x6bc96222}
+
