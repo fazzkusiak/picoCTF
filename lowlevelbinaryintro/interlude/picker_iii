@@ -5,6 +5,17 @@ $ nc saturn.picoctf.net 60144
 The program's source code can be downloaded here.
 
 attempts:
+after some figures, there is a global variable func_table, we could change it, but it must have 128 chars, according to the condition which checks, if string has 4 x 36 chars
+
+gonna try print the key file, by assigining value to func_table, which will be prelonged print
 
 
+ok, it was a long way, I did it at first approach, but somehow it didn't worked, so I left this solution, printed this into func_table
+'win                     read_variable                   write_variable                  getRandomNumber                         '
+so it was valid with 128 chars, next I chosen option 1 from help, which gave me the ascii code
 
+0x70 0x69 0x63 0x6f 0x43 0x54 0x46 0x7b 0x37 0x68 0x31 0x35 0x5f 0x31 0x35 0x5f 0x77 0x68 0x34 0x37 0x5f 0x77 0x33 0x5f 0x67 0x33 0x37 0x5f 0x77 0x31 0x37 0x68 0x5f 0x75 0x35 0x33 0x72 0x35 0x5f 0x31 0x6e 0x5f 0x63 0x68 0x34 0x72 0x67 0x33 0x5f 0x32 0x32 0x36 0x64 0x64 0x32 0x38 0x35 0x7d
+
+gave me weird chars, howver in unicode formatting it looks pretty well
+
+picoCTF{7h15_15_wh47_w3_g37_w17h_u53r5_1n_ch4rg3_226dd285}
