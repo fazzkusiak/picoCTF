@@ -3,5 +3,16 @@ Note: if you are using the webshell, download and extract the disk image into /t
 Download disk image
 Access checker program: nc saturn.picoctf.net 64605
 
+all right, after downloading the compressedf image you have to decompress it in order to get disk file
+gzip -d disk.tar.gz
+
+then mmls -v disk.img
+
+dos_load_prim_table: Testing FAT/NTFS conditions
+load_pri:0:0    Start: 2048   Size: 202752  Type: 131
+
+and we know its 202752
+
+picoCTF{mm15_f7w!}
 
 
