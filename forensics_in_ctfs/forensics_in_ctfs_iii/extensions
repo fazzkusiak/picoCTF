@@ -1,0 +1,7 @@
+Description
+This is a really weird text file TXT? Can you find the flag?
+
+by strings flag.txt 
+I found that in the beginning there is a format png, so Ive changed into png, in the picture the code was given
+
+picoCTF{now_you_know_about_extensions}
