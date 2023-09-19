@@ -1,0 +1,12 @@
+Description
+Use `srch_strings` from the sleuthkit and some terminal-fu to find a flag in this disk image: dds1-alpine.flag.img.gz
+
+for the first decompressed the file
+
+made it in 2 ways
+the easiest is just typing
+srch_strings dds1-alpine.flag.img | grep -ra "picoCTF"
+
+which gives the flag
+
+also, we can use autopsy(gui of sleuthkit), where we can type keyword "picoCTF" and find the same thing
