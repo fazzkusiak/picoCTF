@@ -1,0 +1,22 @@
+Description
+Download this disk image and find the flag.
+Note: if you are using the webshell, download and extract the disk image into /tmp not your home directory.
+Download compressed disk image
+
+
+decompressed, listed disk details
+000:  Meta      0000000000   0000000000   0000000001   Primary Table (#0)
+001:  -------   0000000000   0000002047   0000002048   Unallocated
+002:  000:000   0000002048   0000206847   0000204800   Linux (0x83)
+003:  000:001   0000206848   0000360447   0000153600   Linux Swap / Solaris x86 (0x82)
+004:  000:002   0000360448   0000614399   0000253952   Linux (0x83)
+
+								  
+								  so we have to check two disks, i will start with the second one as its larger than the first
+
+I typed fls -l -o 360448 disk.flag.img to get more information about date of usage etc, found out that root, etc and var were changed, so in the root catalog I found the file with flag called flag.uni.txt, where the flag washidden
+.p.i.c.o.C.T.F.{
+00000010:  0062 0079 0037 0033 005F 0035 0075 0072    .b.y.7.3._.5.u.r
+00000020:  0066 0033 0072 005F 0033 0034 0039 0037    .f.3.r._.3.4.9.7
+00000030:  0061 0065 0036 0062 007D 000A              .a.e.6.b.}..
+picoCTF{by73_5urf3r_3497ae6b}
