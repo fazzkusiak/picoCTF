@@ -1,0 +1,10 @@
+
+Description
+Download the packet capture file and use packet analysis software to find the flag.
+Download packet capture
+
+aftger laoding packet catprue file into wireshark, in one of frames I found the flag hidden in data part
+
+
+picoCTF{p4ck37_5h4rk_01b0a0d6u}
+
