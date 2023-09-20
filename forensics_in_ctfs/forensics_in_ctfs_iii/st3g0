@@ -1,0 +1,14 @@
+Description
+Download this image and find the flag.
+Download image
+
+after looking at tools like strings, exiftool etc Ive realkized, that its about what we can find visually, after examining the picture with different rgb options, I found there is something about left right corner, with help of 
+zsteg
+I found out the hidden text
+
+└─$ zsteg pico.flag.png
+b1,r,lsb,xy         .. text: "~__B>VG?G@"
+b1,rgb,lsb,xy       .. text: "picoCTF{7h3r3_15_n0_5p00n_a9a181eb}$t3g0"
+
+
+
