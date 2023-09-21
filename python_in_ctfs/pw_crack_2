@@ -1,0 +1,11 @@
+
+Description
+Can you crack the password to get the flag?
+Download the password checker here and you'll need the encrypted flag in the same directory too.
+
+
+  if( user_pw == chr(0x64) + chr(0x65) + chr(0x37) + chr(0x36) ):
+
+  copied just this line, needed to translate from hex to text in order to get the needed value
+
+picoCTF{tr45h_51ng1ng_489dea9a}
