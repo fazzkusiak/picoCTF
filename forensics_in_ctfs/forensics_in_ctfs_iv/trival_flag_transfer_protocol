@@ -11,4 +11,11 @@ laso
 
 IUSEDTHEPROGRAMANDHIDITWITH-DUEDILIGENCE.CHECKOUTTHEPHOTOS
 
-foudn out that there are some data fater picture1.bmp and picture2.bmp, however not left on picture2.bmp, gonna back to it wsoon
+foudn out that there are some data fater picture1.bmp andj picture2.bmp, however not left on picture2.bmp, gonna back to it wsoon
+
+it was a long story, however I got this
+
+for the first, it was crucial to export TMTP files from wireshark, instead of reading data, there we can get three images, in instruction there is written, that he hid the flag with password "DUEDILIGENCE", so I used steghide to extract the flag
+
+picoCTF{h1dd3n_1n_pLa1n_51GHT_18375919}
+
