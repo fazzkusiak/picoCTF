@@ -46,4 +46,6 @@ class VaultDoor3 {
     }
 }
 
+overengineered the challegne, all I have to do was copy the string which is checked to input, and then print the built string
 
+picoCTf{jU5t_a_s1mpl3_an4gr4m_4_u_79958f}
