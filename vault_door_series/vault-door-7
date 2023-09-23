@@ -1,3 +1,4 @@
+
 Description
 This vault uses bit shifts to convert a password string into an array of integers. Hurry, agent, we are running out of time to stop Dr. Evil's nefarious plans! The source code for this vault is here: VaultDoor7.javaimport java.util.*;
 import javax.crypto.Cipher;
@@ -70,3 +71,20 @@ class VaultDoor7 {
 
 -> binary -> hex -> decimal
 
+solved it with this easy oneliner
+
+l = [1096770097, 1952395366
+            ,1600270708
+            ,1601398833
+            , 1716808014
+            ,1734304867
+            ,942695730
+        ,942748212
+]
+
+print([''.join(format(bytearray.fromhex(str((hex(int(bin(x), 2)) ))[2:]).decode()) for x in l)])
+
+
+could be better, but im proud anyways
+
+picoCTF{A_b1t_0f_b1t_sh1fTiNg_dc80e28124}
