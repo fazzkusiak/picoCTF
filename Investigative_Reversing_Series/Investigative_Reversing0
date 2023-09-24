@@ -1,3 +1,70 @@
 Description
 We have recovered a binary and an image. See what you can make of it. There should be a flag somewhere.
 
+I used ghidra to get the srouce code from given binary
+
+void main(void)
+
+{
+  FILE *__stream;
+  FILE *__stream_00;
+  size_t sVar1;
+  long in_FS_OFFSET;
+  int local_54;
+  int local_50;
+  char local_38 [4];
+  char local_34;
+  char local_33;
+  char local_29;
+  long local_10;
+
+  local_10 = *(long *)(in_FS_OFFSET + 0x28);
+  __stream = fopen("flag.txt","r");
+  __stream_00 = fopen("mystery.png","a");
+  if (__stream == (FILE *)0x0) {
+    puts("No flag found, please make sure this is run on the server");
+  }
+  if (__stream_00 == (FILE *)0x0) {
+    puts("mystery.png is missing, please run this on the server");
+  }
+  sVar1 = fread(local_38,0x1a,1,__stream);
+  if ((int)sVar1 < 1) {
+                    /* WARNING: Subroutine does not return */
+    exit(0);
+  }
+  puts("at insert");
+  fputc((int)local_38[0],__stream_00);
+  fputc((int)local_38[1],__stream_00);
+  fputc((int)local_38[2],__stream_00);
+  fputc((int)local_38[3],__stream_00);
+  fputc((int)local_34,__stream_00);
+  fputc((int)local_33,__stream_00);
+  for (local_54 = 6; local_54 < 0xf; local_54 = local_54 + 1) {
+    fputc((int)(char)(local_38[local_54] + '\x05'),__stream_00);
+  }
+  fputc((int)(char)(local_29 + -3),__stream_00);
+  for (local_50 = 0x10; local_50 < 0x1a; local_50 = local_50 + 1) {
+    fputc((int)local_38[local_50],__stream_00);
+  }
+  fclose(__stream_00);
+  fclose(__stream);
+  if (local_10 != *(long *)(in_FS_OFFSET + 0x28)) {
+                    /* WARNING: Subroutine does not return */
+    __stack_chk_fail();
+  }
+  return;
+}
+
+it was challenging task, for first I had to research for tool, that would give me the source code. with that, I could reverse engineering and get the password, according to this
+had to change the one condition, it added 5 unnecessary, found it by knowing, that the K should be F, which is shifted by 5
+
+text = "picoCTK k5zsid6q_d1deedaa}"
+print(text[:6], end="")
+for i in range(6, 15):
+    print(chr(ord(text[i]) - 5), end='')
+print(chr(ord(text[15]) + 3), end="")
+for i in range(16, 26):
+    print(text[i], end="")
+
+
+could look better, but did the job
