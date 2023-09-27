@@ -51,7 +51,7 @@ void main(void)
   }
   fclose(__stream_00);
   fclose(__stream);
-  if (local_10 != *(long *)(in_FS_OFFSET + 0x28)) {
+ if (local_10 != *(long *)(in_FS_OFFSET + 0x28)) {
                     /* WARNING: Subroutine does not return */
     __stack_chk_fail();
   }
@@ -60,5 +60,14 @@ void main(void)
 
 did the same with ghidra tool
 
-[[O:wq
+mystery.png extra data contains
+CF{An1_69008b75}
+
+myster3.png extradata contains
+icT0tha_
+
+mystery2.png has this:
+00000000: 85 73 |.s |
+
+
 
