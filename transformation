@@ -1,0 +1,9 @@
+I wonder what this really is... enc ''.join([chr((ord(flag[i]) << 8) + ord(flag[i + 1])) for i in range(0, len(flag), 2)]
+
+in file
+
+灩捯䍔䙻ㄶ形楴獟楮獴㌴摟潦弸弰㑣〷㘰摽
+
+honestly, idk how to solve it, there is some tip about decoders online available, tried to translate it into utf8 and then do sth with it, but soemhow its not working as I wished
+
+)
